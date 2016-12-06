@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeyboardThemes>
+    <!-- just here to test
+    <KeyboardTheme
+        id="ac8ea510-ca66-11e1-9b23-0800200c9a66"
+        nameResId="@string/lean_dark_keyboard_theme_name"
+        themeRes="@style/LeanDark"
+        popupThemeRes="@style/LeanDarkPopup"
+        iconsThemeRes="@style/AnyKeyboardBaseKeyIconTheme"
+        description="@string/lean_dark_keyboard_theme_description"
+        index="1"/>
+        -->
+</KeyboardThemes>

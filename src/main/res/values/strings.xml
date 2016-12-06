@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Programmer Keyboard</string>
+    <string name="keyboard_name">&lt;/&gt;</string>
+    <string name="extension_keyboard_name">Programming Keywords t1</string>
+    <string name="extension_keyboard_name2">Programming Keywords t2</string>
+    <string name="quick_text_name">Java</string>
+    <string name="code_symbol">&lt;/&gt; </string>
+    <string name="quick_text_keys_name">Template Name</string>
+    <string name="dictionary_name">Dictionary Template Name</string>
+    <string name="template">Template</string>
+    <string name="pop">pop</string>
+</resources>

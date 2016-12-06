@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- merely -->
+<QuickTextKeys>
+    <QuickTextKey
+        id="use the guid tool to generate a unique id"
+        nameResId="@string/quick_text_keys_name"
+        popupKeyboard="@xml/quick_text_template"
+        keyLabel="@string/code_symbol"
+        keyOutputText="@string/code_symbol"
+        description=""
+        index="1" />
+
+</QuickTextKeys>

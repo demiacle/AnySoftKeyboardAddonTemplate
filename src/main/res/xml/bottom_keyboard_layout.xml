@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="8%p"
+    >
+    <Row android:rowEdgeFlags="bottom" >
+        <Key android:codes="40" android:keyLabel="(" android:keyWidth="12%p" android:popupCharacters="{&lt;[" android:keyEdgeFlags="left"/>
+        <Key android:codes="41" android:keyLabel=")" android:keyWidth="12%p" android:popupCharacters="}&gt;]"/>
+        <Key android:codes="39" android:keyLabel="&apos;" android:popupCharacters="&quot;" android:keyWidth="10%p"/>
+        <Key android:codes="32" android:keyLabel="@string/template" android:keyWidth="30%p" android:isRepeatable="true"/>
+        <Key android:codes="46" android:keyLabel="." android:keyWidth="10%p" android:popupCharacters="\?;:" />
+
+        <!-- if shifted codes removed then key will shift into a . for some reason-->
+        <Key android:codes="47" android:keyLabel="/" android:keyWidth="10%p" android:popupCharacters="\\:;"/>
+        <Key android:codes="@integer/key_code_enter" android:keyLabel="ENTER" android:keyWidth="16%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

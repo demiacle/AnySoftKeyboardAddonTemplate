@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionKeyboards>
+    <ExtensionKeyboard
+        id="4589-234234"
+        nameResId="@string/extension_keyboard_name"
+        extensionKeyboardResId="@xml/bottom_keyboard_layout"
+        extensionKeyboardType="@integer/extension_keyboard_type_bottom_row"
+        description=""
+        index="8"
+        />
+    <ExtensionKeyboard
+        id="4589-234234"
+        nameResId="@string/extension_keyboard_name2"
+        extensionKeyboardResId="@xml/top_keyboard_layout"
+        extensionKeyboardType="@integer/extension_keyboard_type_top_row"
+        description=""
+        index="8"
+        />
+</ExtensionKeyboards>

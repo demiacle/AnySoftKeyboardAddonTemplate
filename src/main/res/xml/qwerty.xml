@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <!-- Key attributes:
+         "android:codes" : a comma separated unicode values of the keys. If you specify more than one code, then the other codes are accessible via multi-tap.
+         "android:popupCharacters" : characters to show on long-press popup keyboard
+         "android:keyLabel" : the text to show on the key. If this attribute is missing, the first code in "android:codes" will be used.
+         "android:horizontalGap" : gap to add to the left of this key.
+         "android:isModifier" : true/false (default is false) whether this key is a modifier key. Means it will be rendered with a differnt background (shift, delete are example of modifier key)
+         "android:isRepeatable" : true/false (default is false) whether this key repeats printing on long press (like the backspace). Setting this to true will disable the long-press (android:popupCharacters) functionality
+         "android:keyWidth" : specify the width of this key
+         -->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="8%p"
+    android:keyHeight="10dp"
+    >
+    <Row android:keyHeight="38dp" android:keyWidth="12.5%p" android:keyTextSize="5sp" android:labelTextSize="5sp">
+        <Key android:codes="123" android:keyLabel="{" android:keyEdgeFlags="left"/>
+        <Key android:codes="125" android:keyLabel="}"/>
+        <Key android:codes="91" android:keyLabel="["/>
+        <Key android:codes="93" android:keyLabel="]"/>
+        <Key android:codes="40" android:keyLabel="("/>
+        <Key android:codes="41" android:keyLabel=")"/>
+        <Key android:codes="60" android:keyLabel="&lt;"/>
+        <Key android:codes="62" android:keyLabel="&gt;" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:keyHeight="35dp" android:keyWidth="9.09%p">
+        <Key android:codes="49" android:keyLabel="1" ask:shiftedCodes="33" ask:shiftedKeyLabel="!" android:keyEdgeFlags="left"/>
+        <Key android:codes="50" android:keyLabel="2" ask:shiftedCodes="64" ask:shiftedKeyLabel="\@"/>
+        <Key android:codes="51" android:keyLabel="3" ask:shiftedCodes="35" ask:shiftedKeyLabel="\#"/>
+        <Key android:codes="52" android:keyLabel="4" ask:shiftedCodes="36" ask:shiftedKeyLabel="$"/>
+        <Key android:codes="53" android:keyLabel="5" ask:shiftedCodes="37" ask:shiftedKeyLabel="%"/>
+        <Key android:codes="54" android:keyLabel="6" ask:shiftedCodes="94" ask:shiftedKeyLabel="^"/>
+        <Key android:codes="55" android:keyLabel="7" ask:shiftedCodes="38" ask:shiftedKeyLabel="&amp;"/>
+        <Key android:codes="56" android:keyLabel="8" ask:shiftedCodes="42" ask:shiftedKeyLabel="*"/>
+        <Key android:codes="57" android:keyLabel="9" ask:shiftedCodes="47" ask:shiftedKeyLabel="/"/>
+        <Key android:codes="48" android:keyLabel="0" ask:shiftedCodes="43" ask:shiftedKeyLabel="-"/>
+        <Key android:codes="61" android:keyLabel="=" ask:shiftedCodes="45" ask:shiftedKeyLabel="+" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:keyWidth="9%p">
+        <Key android:codes="113" android:keyLabel="q" android:popupCharacters="|" android:keyEdgeFlags="left"/>
+        <Key android:codes="119" android:keyLabel="w" />
+        <Key android:codes="101" android:keyLabel="e"/>
+        <Key android:codes="114" android:keyLabel="r"/>
+        <Key android:codes="116" android:keyLabel="t"/>
+        <Key android:codes="121" android:keyLabel="y"/>
+        <Key android:codes="117" android:keyLabel="u"/>
+        <Key android:codes="105" android:keyLabel="i"/>
+        <Key android:codes="111" android:keyLabel="o"
+            android:isRepeatable="true"
+            ask:swipeLeftCode="49"
+            ask:swipeRightCode="50"
+            ask:swipeUpCode="51"/>
+        <Key android:codes="112" android:keyLabel="p"/>
+        <Key android:codes="92,124" android:keyLabel="\\" android:popupCharacters="|" android:keyWidth="10%p" android:keyEdgeFlags="right"/>
+    </Row>
+    <!-- this row should be 1 key shorter -->
+    <Row >
+        <Key android:codes="95" android:keyLabel="_" android:keyWidth="12%p" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="97" android:keyLabel="a"/>
+        <Key android:codes="115" android:keyLabel="s"/>
+        <Key android:codes="100" android:keyLabel="d"/>
+        <Key android:codes="102" android:keyLabel="f"/>
+        <Key android:codes="103" android:keyLabel="g"/>
+        <Key android:codes="104" android:keyLabel="h"/>
+        <Key android:codes="106" android:keyLabel="j"/>
+        <Key android:codes="107" android:keyLabel="k"/>
+        <Key android:codes="108" android:keyLabel="l"/>
+        <Key android:codes="59,58" android:keyLabel="; :"/>
+        <Key android:codes="39,34" android:keyLabel="&apos; &quot;" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:keyWidth="9%p">
+        <Key android:codes="-1" android:keyLabel="shift"  android:keyWidth="18%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="122" android:keyLabel="5"/>
+        <Key android:codes="120" android:keyLabel="x"/>
+        <Key android:codes="99" android:keyLabel="c"/>
+        <Key android:codes="118" android:keyLabel="v"/>
+        <Key android:codes="98" android:keyLabel="b"/>
+        <Key android:codes="110" android:keyLabel="n"/>
+        <Key android:codes="109" android:keyLabel="m" />
+        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="19%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

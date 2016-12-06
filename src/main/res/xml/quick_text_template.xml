@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyHeight="@integer/key_normal_height"
+    android:keyWidth="15%p">
+    <Row android:rowEdgeFlags="top">
+        <Key
+            android:keyEdgeFlags="left"
+            android:keyLabel="tem"
+            android:keyOutputText="tem"/>
+        <Key
+            android:keyLabel="plate"
+            android:keyOutputText="plate "/>
+        <Key
+            android:keyLabel="templ"
+            android:keyOutputText="templ"/>
+        <Key
+            android:keyLabel="ate"
+            android:keyOutputText="ate"/>
+        <Key
+            android:keyLabel="te"
+            android:keyOutputText="te"/>
+        <Key
+            android:keyEdgeFlags="right"
+            android:keyLabel="mplate"
+            android:keyOutputText="mplate"/>
+    </Row>
+</Keyboard>

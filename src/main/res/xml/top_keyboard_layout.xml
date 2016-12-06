@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ask="http://schemas.android.com/apk/res-auto"
+    android:keyWidth="10%p"
+    >
+    <Row android:rowEdgeFlags="top" android:keyHeight="@integer/key_short_height">
+        <Key android:codes="9" android:keyLabel="Tab" android:keyWidth="17%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-2" android:keyWidth="18%p"/>
+        <Key android:keyWidth="15%p" ask:isFunctional="true" android:codes="-20" android:isRepeatable="true" ask:hintLabel=" "/>
+        <Key android:keyWidth="15%p" ask:isFunctional="true" android:codes="-21" android:isRepeatable="true" ask:hintLabel=" "/>
+        <Key android:codes="-102" android:keyLabel="@string/pop" android:keyWidth="18%p"/>
+        <Key android:codes="61" android:keyLabel="=" android:popupCharacters="~`" android:keyWidth="17%p"/>
+    </Row>
+</Keyboard>
